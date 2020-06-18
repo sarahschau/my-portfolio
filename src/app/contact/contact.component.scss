@@ -1,0 +1,19 @@
+.contact {
+    padding: 100px 0;
+    padding-left: 5vw;
+    background-color: #efefef;
+
+    &__title {    
+        margin-bottom: 10px;
+    }
+
+    &__copy {
+        margin-bottom: 40px;
+    }
+
+    &__mail {
+        a {
+            color: #111111;
+        }
+    }
+}
