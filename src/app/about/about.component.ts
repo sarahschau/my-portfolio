@@ -18,6 +18,7 @@ export class AboutComponent implements OnInit {
     { name: 'CSS/SCSS', level: 5 },
     { name: 'JavaScript', level: 4 },
     { name: 'Vue.js/Nuxt.js', level: 4 },
+    { name: 'Angular', level: 2 },
     { name: 'Wordpress', level: 3 },
     { name: 'Strapi', level: 2 }
   ];
