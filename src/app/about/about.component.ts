@@ -7,7 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  numbers: Array<number>;
+
+  constructor() {
+    this.numbers = Array(5).fill(0).map(( x, i ) => i);
+   }
+
+  qualifications = [
+    { name: 'HTML', level: 5 },
+    { name: 'CSS/SCSS', level: 5 },
+    { name: 'JavaScript', level: 4 },
+    { name: 'Vue.js/Nuxt.js', level: 4 },
+    { name: 'Wordpress', level: 3 },
+    { name: 'Strapi', level: 2 }
+  ];
 
   ngOnInit(): void {
   }
