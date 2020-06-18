@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { PROJECTS } from '../mock-projects';
+
 @Component({
   selector: 'app-work',
   templateUrl: './work.component.html',
@@ -8,6 +10,8 @@ import { Component, OnInit } from '@angular/core';
 export class WorkComponent implements OnInit {
 
   constructor() { }
+
+  projects = PROJECTS;
 
   ngOnInit(): void {
   }
