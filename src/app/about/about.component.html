@@ -2,6 +2,18 @@
     <h2 class="about__title t-pretitle">About</h2>
     <p class="about__copy t-text">Some facts about my life. Coming ASAP.</p>
 
+    <div class="about__qualifications">
+        <div>
+            <h3 class="about__qualification-title">Qualifications</h3>
+            <div *ngFor="let qualification of qualifications" class="about__qualification">
+                <p>{{ qualification.name }}</p>
+                <div>
+                    <span *ngFor="let number of numbers;  let i = index" class="about__qualification-cnt" [class]="qualification.level - 1 >= i  ? 'about__qualification-cnt--fill' : ''"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="about__carrer">
         <div>
             <h3>Experiences</h3>
@@ -30,4 +42,6 @@
             </ul>
         </div>
     </div>
+
+
 </section>
