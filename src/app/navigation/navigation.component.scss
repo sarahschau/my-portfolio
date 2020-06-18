@@ -1,6 +1,7 @@
 .app-navigation {
     position: fixed;
-    top: 0;
+    top: 15px;
+    left: calc(5vw - 10px);
 
     ul {
         display: flex;
