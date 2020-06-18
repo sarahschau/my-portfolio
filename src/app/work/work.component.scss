@@ -17,6 +17,11 @@
         margin-top: 40px;
         display: flex;
         flex-wrap: wrap;
+
+        @media(min-width: 992px) {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
     }
 
     &__project {
