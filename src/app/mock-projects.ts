@@ -26,6 +26,12 @@ export const PROJECTS: Project[] = [
         technologies: ['Nuxt.js', 'Strapi' , 'SCSS']
     },
     {
+        title: 'Vöslauer Lauf los',
+        link: 'https://lauflos.voeslauer.at/',
+        description: 'Microsite eine Running Kampagne von Vöslauer',
+        technologies: ['Nuxt.js', 'Strapi' , 'SCSS']
+    },
+    {
         title: 'Darbo Fruchtikurs',
         link: 'https://fruchtikus.darbo.at/',
         description: 'Interaktive Rezepte Seite für Darbo',
