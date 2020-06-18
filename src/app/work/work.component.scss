@@ -1,10 +1,15 @@
 .work {
+    padding: 100px 0;
     padding-left: 5vw;
-    margin: 100px 0;
-    margin-top: 200px;
+    background-color: #efefef;
 
     &__title {        
         margin-bottom: 10px;
+    }
+
+    &__copy {
+        max-width: 440px;
+        line-height: 1.2;
     }
 
     &__projects {
@@ -17,7 +22,7 @@
 
         a {
             color: #111;
-            text-decoration: none;
+            // text-decoration: none;
         }
     }
 }
