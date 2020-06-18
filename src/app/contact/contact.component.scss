@@ -14,8 +14,25 @@
     &__links {
         a {
             color: #111111;
-            display: block;
-            padding: 5px 0;
+            display: inline-block;
+            // padding: 5px 0;
+            padding: 11px 20px;
+            background-color: #953E60;
+            margin: 0 20px;
+            color: #efefef;
+            border: 1px solid #953E60;
+            transition: all 0.3s;
+            text-decoration: none;
+
+            &:first-of-type {
+                margin-left: 0;
+            }
+
+
+            &:hover {
+                background-color: #efefef;
+                color: #953E60;
+            }
         }
     }
 }
