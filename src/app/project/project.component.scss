@@ -1,0 +1,26 @@
+.project {
+    margin: 40px 0;
+    padding: 20px;
+
+    &__title {
+        margin-bottom: 8px;
+    }
+
+    &__description {
+        margin-bottom: 8px;
+    }
+
+    &__link {
+        color: #111111;
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    &__technology {
+        padding: 7px 9px;
+        background-color: #efefef;
+        margin: 10px;
+        display: inline-block;
+    }
+}
