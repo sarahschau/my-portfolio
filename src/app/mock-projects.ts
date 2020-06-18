@@ -27,7 +27,7 @@ export const PROJECTS: Project[] = [
     },
     {
         title: 'Vöslauer Lauf los',
-        link: 'https://lauflos.voeslauer.at/',
+        link: 'https://lauflos.voeslauer.com/',
         description: 'Microsite eine Running Kampagne von Vöslauer',
         technologies: ['Nuxt.js', 'Strapi' , 'SCSS']
     },
