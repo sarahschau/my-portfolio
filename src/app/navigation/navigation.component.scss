@@ -1,7 +1,6 @@
-.app-navigation {
-    position: fixed;
-    top: 15px;
-    left: calc(5vw - 10px);
+.navigation {
+    padding: 15px 0;
+    padding-left: calc(5vw - 10px);
 
     ul {
         display: flex;
@@ -14,6 +13,7 @@
         a {
             padding: 10px 20px;
             color: #111;
+            text-decoration: none;
         }
     }
 }
