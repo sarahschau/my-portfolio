@@ -1,0 +1,23 @@
+.work {
+    padding-left: 5vw;
+    margin: 100px 0;
+    margin-top: 200px;
+
+    &__title {        
+        margin-bottom: 10px;
+    }
+
+    &__projects {
+        margin-top: 40px;
+    }
+
+    &__project {
+        list-style: none;
+        padding: 10px 0;
+
+        a {
+            color: #111;
+            text-decoration: none;
+        }
+    }
+}
