@@ -1,8 +1,46 @@
-.app-about {
+.about {
     padding: 100px 0;
     padding-left: 5vw;
 
     &__title {
         margin-bottom: 10px;
+    }
+
+    &__copy {
+        margin-bottom: 40px;
+    }
+
+    &__carrer {
+
+        h3 {
+            margin-bottom: 20px,
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        li {
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 15px;
+                height: 15px;
+                border-radius: 30px;
+                background-color: #111111;
+                margin-right: 20px;
+            }
+        }
+
+        &-date {
+            font-weight: 800;
+            display: block;
+            padding-bottom: 5px;
+        }
     }
 }
