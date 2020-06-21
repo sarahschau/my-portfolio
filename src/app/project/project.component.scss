@@ -1,13 +1,85 @@
 .project {
-    margin: 40px 0;
-    padding: 20px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    &:hover {
+
+        color: #111111;
+
+        .project__header {
+            top: 0;
+            z-index: 99;
+        }
+    
+        .project__footer {
+            bottom: 0;
+        }
+
+        .project__image {
+            opacity: 0;
+        }
+
+        a {
+            color: #111111;
+        }
+    }
+
+    &__header {
+        position: relative;
+        top: -100%;
+        transition: top 0.5s;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    &__footer {
+        position: relative;
+        bottom: -100%;
+        transition: bottom 0.5s;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 30px;
+    }
+    
+    &__image {
+        background-size: cover;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        transition: opacity 0.5s;
+        z-index: 9;
+
+
+        &::after {
+            position: relative;
+            padding-top: 50%;
+            content: "";
+            display: block;
+        }
+    }
+    
+    &__details {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        height: 100%;
+    }
+
 
     &__title {
-        margin-bottom: 8px;
+        margin-bottom: 10px;
+        font-size: 1.25rem;
     }
 
     &__description {
-        margin-bottom: 8px;
+        margin-bottom: 10px;
     }
 
     &__link {
@@ -18,9 +90,8 @@
     }
 
     &__technology {
-        padding: 7px 9px;
-        background-color: #efefef;
-        margin: 10px;
+        font-size: 0.9rem;
         display: inline-block;
+
     }
 }
