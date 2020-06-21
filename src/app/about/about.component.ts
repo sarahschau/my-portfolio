@@ -22,7 +22,7 @@ export class AboutComponent implements OnInit {
     { name: 'Strapi', level: 2 },
     { name: 'REST', level: 4 },
     { name: 'GraphQL', level: 3 },
-    { name: 'Wordpress', level: 3 }
+    { name: 'Wordpress', level: 4 }
   ];
 
   ngOnInit(): void {
