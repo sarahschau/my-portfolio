@@ -2,7 +2,11 @@
     padding: 100px 0;
     padding-left: 5vw;
     padding-right: 5vw;
-    background-color: #efefef;
+    background-color: #f9f9f9;
+
+    &__wrapper {
+        max-width: 2500px;
+    }
 
     &__title {        
         margin-bottom: 10px;
@@ -11,6 +15,11 @@
     &__copy {
         max-width: 440px;
         line-height: 1.2;
+
+        span {
+            font-size: 0.75rem;
+            font-style: italic;;
+        }
     }
 
     &__projects {
@@ -22,6 +31,14 @@
             margin-left: -10px;
             margin-right: -10px;
         }
+
+        &:after {
+            display: block;
+            content: "";
+            width: calc(50% - 20px);
+            height: auto;
+            margin: 10px;
+        }
     }
 
     &__project {
@@ -29,6 +46,7 @@
         flex: 100%;
         margin: 10px 0;
         background-color: #fefefe;
+        display: flex;
 
         @media(min-width: 992px) {
             flex: calc(50% - 20px);
@@ -37,7 +55,6 @@
 
         a {
             color: #111;
-            // text-decoration: none;
         }
     }
 }

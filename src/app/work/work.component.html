@@ -1,8 +1,10 @@
 <section class="work">
-    <h2 class="work__title t-pretitle">Work</h2>
-    <p class="work__copy t-text">Eine kleine aber feine Auswahl meiner bisherigen Projekte</p>
-
-    <ul class="work__projects">
-        <app-project class="work__project" *ngFor="let project of projects" [project]="project"></app-project>
-    </ul>
+    <div class="work__wrapper">
+        <h2 class="work__title t-pretitle">Work</h2>
+        <p class="work__copy t-text">A small selection of my previous projects in my carrer. <span>(Designs are not from me.) </span></p>
+        
+        <ul class="work__projects">
+            <app-project class="work__project" *ngFor="let project of projects" [project]="project"></app-project>
+        </ul>
+    </div>
 </section>
