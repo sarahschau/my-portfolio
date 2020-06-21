@@ -15,4 +15,15 @@ export class ProjectComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getTechnologies(): string {
+    let technologies = '';
+    this.project.technologies.forEach((technology, idx) => {
+      if (idx === this.project.technologies.length - 1) {
+        technologies += technology;
+      } else {
+        technologies += technology + ', ';
+      }
+    });
+    return technologies;
+  }
 }
