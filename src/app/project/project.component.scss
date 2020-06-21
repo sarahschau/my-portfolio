@@ -2,6 +2,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+    min-height: 220px;
 
     &:hover {
 
@@ -52,13 +53,18 @@
         opacity: 1;
         transition: opacity 0.5s;
         z-index: 9;
+        background-position: center;
 
 
         &::after {
             position: relative;
-            padding-top: 50%;
+            padding-top: 70%;
             content: "";
             display: block;
+
+            @media(min-width: 768px) {
+                padding-top: 50%;
+            }
         }
     }
     
